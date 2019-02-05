@@ -1,0 +1,10 @@
+pidfile = 'predict.pid'
+worker_class = 'gthread'
+workers = 5
+worker_connections = 1000
+threads = 2
+bind = '0.0.0.0:8080'
+access_logfile = 'access.log'
+error_logfile = 'error.log'
+user = 'ubuntu'
+group = 'ubuntu'
