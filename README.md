@@ -25,26 +25,27 @@ ubuntu$ git clone git@github.com:nethacker/scalable-ubuntu-flask-gunicorn-nginx.
 
 ```bash
 cd scalable-ubuntu-flask-gunicorn-nginx/setup
-ubuntu$ bash step-1-ubuntu-global-setup.sh
+
+bash step-1-ubuntu-global-setup.sh
 ```
 
 ## Step 2
 
 ```bash
-ubuntu$ bash step-2-ubuntu-user-setup.sh
+bash step-2-ubuntu-user-setup.sh
 ```
 
 ## Step 3
 ```bash
-ubuntu$ bash step-3-app-dependencies-setup.sh
+bash step-3-app-dependencies-setup.sh
 ```
 
 ## Step 4
 ```bash
-ubuntu$ bash step-4-systemd-setup.sh
+bash step-4-systemd-setup.sh
 ```
 
 ### Step 5
 ```bash
-ubuntu$ bash step-5-nginx-setup.sh
+bash step-5-nginx-setup.sh
 ```
