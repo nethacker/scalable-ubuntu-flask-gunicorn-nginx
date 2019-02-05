@@ -1,4 +1,4 @@
-pidfile = 'predict.pid'
+pidfile = 'app01.pid'
 worker_class = 'gthread'
 workers = 5
 worker_connections = 1000
