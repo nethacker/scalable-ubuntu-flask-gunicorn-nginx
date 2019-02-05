@@ -1,1 +1,1 @@
-# scaled-ubuntu-flask-gunicorn-nginx
+# scalable-ubuntu-flask-gunicorn-nginx
