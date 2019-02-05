@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt upgrade
+#sudo apt -y upgrade
 sudo apt -y install ntpdate
 sudo ntpdate pool.ntp.org
 sudo apt -y install ntp
