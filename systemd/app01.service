@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn for Flask app01
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/flask
+Environment="PATH=/home/ubuntu/flask/app01/bin"
+ExecStart=/home/ubuntu/flask/app01/bin/gunicorn --config=gunicorn.py wsgi:app
+
+[Install]
+WantedBy=multi-user.target
