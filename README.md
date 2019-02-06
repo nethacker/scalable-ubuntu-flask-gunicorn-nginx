@@ -15,10 +15,11 @@ Following the below steps you will have a "Hello World" web application which le
 
 ## Setup
 
-SSH onto your server and clone the repo into your /home/ubuntu directory
+* SSH onto your server and clone the repo into your /home/ubuntu directory
+* Go into the setup directory and run the setup.sh script
 
 ```bash
-ubuntu$ git clone https://github.com/nethacker/scalable-ubuntu-flask-gunicorn-nginx.git
+git clone https://github.com/nethacker/scalable-ubuntu-flask-gunicorn-nginx.git
 
 cd scalable-ubuntu-flask-gunicorn-nginx/setup
 
