@@ -13,39 +13,14 @@ Following the below steps you will have a "Hello World" web application which le
 * Ubuntu 18.04 server
 * A user named ubuntu on the Ubuntu Server with sudo privileges
 
-## Step 0
+## Setup
 
 SSH onto your server and clone the repo into your /home/ubuntu directory
 
 ```bash
-ubuntu$ git clone git@github.com:nethacker/scalable-ubuntu-flask-gunicorn-nginx.git
-```
+ubuntu$ git clone https://github.com/nethacker/scalable-ubuntu-flask-gunicorn-nginx.git
 
-## Step 1
-
-```bash
 cd scalable-ubuntu-flask-gunicorn-nginx/setup
 
-bash step-1-ubuntu-global-setup.sh
-```
-
-## Step 2
-
-```bash
-bash step-2-ubuntu-user-setup.sh
-```
-
-## Step 3
-```bash
-bash step-3-app-dependencies-setup.sh
-```
-
-## Step 4
-```bash
-bash step-4-systemd-setup.sh
-```
-
-### Step 5
-```bash
-bash step-5-nginx-setup.sh
+bash setup.sh
 ```
