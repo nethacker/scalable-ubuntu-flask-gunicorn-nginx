@@ -39,6 +39,7 @@ deactivate
 
 sudo cp /home/ubuntu/scalable-ubuntu-flask-gunicorn-nginx/systemd/app01.service  /etc/systemd/system/
 sudo systemctl start app01
+sudo systemctl enable app01.service
 
 # nginx setup
 
