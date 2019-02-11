@@ -46,7 +46,7 @@ Below are the general steps the setup.sh file is executing. Please see the actua
 
 * Creating a directory structure for our test application named app01
 * Leverage virtualenv to install Python3 packages in a virtual environment.
-* Install gunicorn for as a webserver, flask microframework, setproctitle for ps friendly name
+* Install gunicorn a webserver, flask a microframework, setproctitle for process friendly name
 * Copy test application app01 to appropriate location from repo hierarchy
 * Copy test application app01 gunicorn webserver config to appropriate location from repo hierarchy
 
@@ -61,3 +61,10 @@ Below are the general steps the setup.sh file is executing. Please see the actua
 * Copy test application app01 nginx config to appropriate location from repo hierarchy
 * Delete default nginx config
 * Enable nginx site and restart nginx
+
+## Performance notes:
+
+* Gunicorn is configured with 5 workers leveraging threading (2 per worker) each worker can handle 1000 connections. Typical formula is 2 workers per cpu core +1 worker
+* Gunicorn Timeout value is set to 30 seconds and keepalive is set to 2 seconds
+* NGINX is set to use 8 buffers and 24K size per buffer when reading a response from the proxied server for a single connection
+* NGINX is set to 4k buffer size used for headers from the pool
