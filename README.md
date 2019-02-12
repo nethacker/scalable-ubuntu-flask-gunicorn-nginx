@@ -68,3 +68,4 @@ Below are the general steps the setup.sh file is executing. Please see the actua
 * Gunicorn Timeout value is set to 30 seconds and keepalive is set to 2 seconds
 * NGINX is set to use 8 buffers and 24K size per buffer when reading a response from the proxied server for a single connection
 * NGINX is set to 4k buffer size used for headers from the pool
+* NGINX worker_processes are set to "auto" for detecting number of cores and setting that value
