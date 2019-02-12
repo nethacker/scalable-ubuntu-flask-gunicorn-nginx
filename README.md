@@ -6,7 +6,7 @@ This solution provides scaffolding for a scalable [Python](https://www.python.or
 
 ## Deployment:
 
-By executing the setup.sh script (instructions below) you will have a "Hello World" web application which leverages Flask a microframework for Python and Gunicorn acting as a webserver with NGINX serving as a reverse proxy.
+By executing the setup.sh script (instructions below) you will have a "Hello World" web application which leverages Flask a microframework for Python and Gunicorn acting as a webserver with NGINX serving as a reverse proxy. Upon successful deployment and if port 80 is open to you, going to the server IP in a browser will show you the message "Hello World" in red.
 
 ## Requirement:
 
